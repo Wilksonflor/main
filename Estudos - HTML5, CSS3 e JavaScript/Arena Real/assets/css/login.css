@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+:root{
+  font: 62.5%;
+  --background: #201b2c;
+  --all-h1: #77ffc0;
+  --background-login: #2f2841;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Noto Sans', sans-serif;
+}
+.card{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-left{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-left > h1{
+  font-size: 3vw;
+  color: var(--all-h1);
+}
+.imagem{
+  width: 35vw;
+}
+.login-right{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-login{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 3.5rem;
+  background-color: var(--background-login);
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 4rem #00000056;
+}
+.card-login > h1{
+  color:#00ff88;
+  font-weight: 800;
+  margin: 0;
+  text-transform: uppercase;
+}
+.textfield{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.textfield > input{
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: #514869;
+  color: #f0ffffde;
+  outline: none;
+  font-size: 12pt;
+  box-shadow: 0 1rem 4rem #00000056;
+}
+.textfield > label{
+  width: 100%;
+  color: #f0ffffde;
+  margin-bottom: 1rem;
+}
+.textfield > input::placeholder{
+  color: #f0ffff94;
+}
+.btn-login{
+  width: 100%;
+  padding: 1.6rem 0rem;
+  margin: 2.5rem;
+  border: none;
+  border-radius: .8rem;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: .2rem;
+  color: #2b134b;
+  background-color: #00ff88;
+  box-shadow: 0 1rem 4rem -1.2rem #00ff8052;
+}
+a{
+  text-decoration: none;
+  color: #f0ffff94;
+}
+@media only screen and (max-width: 950px){
+  .card-login{
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 650px){
+  .card{
+    flex-direction: column;
+  }
+  .login-left > h1{
+    display: none;
+  }
+  .login-left{
+    width: 100%;
+    height: auto;
+  }
+  .login-right{
+    width: 100%;
+    height: auto;
+  }
+  .login-left > img{
+    width: 50vw;
+  }
+  .card-login{
+    width: 90%;
+  }
+}
