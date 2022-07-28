@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Montserrat:wght@600;700&family=Poppins:wght@500&family=Roboto&display=swap');
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+:root {
+  font-size: 62.5%;
+  --colormenu--: hsla(0, 0%, 16%, 1);
+  --colorred--: rgb(218, 37, 52);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Menu de navegação */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#logo {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 4rem;
+}
+#logo span {
+  color: var(--color);
+}
+.menu {
+  width: 100vw;
+  max-width: 1228px;
+  padding-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9.1rem;
+}
+.menu nav a {
+  width: 100%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: var(--colormenu--);
+  margin-left: 9rem;
+}
+#entrar {
+  width: 18.8rem;
+  height: 4.9rem;
+  cursor: pointer;
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 2.4rem;
+
+  background-color: #fff;
+  color: var(--colormenu--);
+  border: 2px solid #292929;
+  border-radius: 10px;
+}
+/* Terminou o menu */
+
+/* --------------- */
+
+/* conteudo  da primeira section*/
+
+main {
+  max-width: 1228px;
+  margin: auto;
+}
+#section1 {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+#section1 .conteudo {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 500px;
+}
+#section1 .conteudo:nth-child(2) {
+  display: flex;
+  justify-content: right;
+}
+#section1 .conteudo #imgcover {
+  height: 100%;
+}
+#section1 .conteudo h1 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 48px;
+}
+#section1 .conteudo p {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 24px;
+  margin-block: 24px 48px;
+}
+#section1 .conteudo:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btn-cardapio {
+  width: 29.2rem;
+  height: 6rem;
+  background: #da2535;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 24px;
+}
+/* --------------- */
+
+#section2 {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  /* border: 2px solid red; */
+}
+#section2 .conteudoSection2 {
+  width: 100%;
+  height: 520px;
+}
+
+#section2 #prato {
+  width: 100%;
+  height: auto;
+}
+#section2 .conteudoSection2:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.4rem 4rem;
+  padding-left: 12.4rem;
+}
+#section2 .conteudoSection2 h2 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 4.8rem;
+}
+#section2 .conteudoSection2 p {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+#section2 .conteudoSection2 a {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 2.4rem;
+  color: var(--colorred--);
+} /*terminou a parte da segunda seção */
+
+#section3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+  margin-bottom: 5.4rem;
+}
+#section3 h2 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 4.8rem;
+  text-align: center;
+  margin-bottom: 5.4rem;
+}
+#section3 .box-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#section3 .box-pratos {
+  width: 380px;
+  height: 450px;
+  background: #f3f3f3;
+  border-radius: 32px;
+  text-align: center;
+}
+#section3 .box-pratos .img-pratos {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  border: 10px solid green;
+}
+#section3 .box-pratos img {
+  position: relative;
+  width: ;
+  height: auto;
+}
+#section3 .box-pratos h3 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  color: var(--colormenu--);
+}
+#section3 .box-pratos p {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+#section3 .box-pratos h5 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 3.2rem;
+}
