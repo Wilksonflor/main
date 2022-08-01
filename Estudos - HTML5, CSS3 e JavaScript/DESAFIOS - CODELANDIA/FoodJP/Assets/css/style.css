@@ -41,7 +41,7 @@ header {
 .menu nav a {
   width: 100%;
   font-family: 'Inter';
-  font-style: normal;
+  font-weight: 500;
   font-size: 2.4rem;
   text-decoration: none;
   color: var(--colormenu--);
@@ -163,54 +163,239 @@ main {
   flex-direction: column;
   margin-top: 10rem;
   margin-bottom: 5.4rem;
+  /* border: 6px solid yellow; */
 }
 #section3 h2 {
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 4.8rem;
   text-align: center;
-  margin-bottom: 5.4rem;
+  margin-bottom: 12rem;
 }
 #section3 .box-wrapper {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  /* border: 4px solid red; */
 }
-#section3 .box-pratos {
-  width: 380px;
-  height: 450px;
+#section3 .box-wrapper .box-pratos {
+  /* border: 4px solid black; */
+  width: 100%;
+  height: auto;
   background: #f3f3f3;
   border-radius: 32px;
   text-align: center;
+  margin-inline: 10px;
 }
-#section3 .box-pratos .img-pratos {
+#section3 .box-wrapper .box-pratos .img-pratos {
+  display: flex;
+  justify-content: center;
+  /* border: 4px solid green; */
   position: relative;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: auto;
-  border: 10px solid green;
+  height: 250px;
 }
-#section3 .box-pratos img {
-  position: relative;
-  width: ;
-  height: auto;
+#section3 .box-wrapper .box-pratos .img-pratos img {
+  position: absolute;
+  top: -90px;
 }
 #section3 .box-pratos h3 {
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 3.2rem;
   color: var(--colormenu--);
 }
 #section3 .box-pratos p {
   font-family: 'Inter';
   font-weight: 400;
   font-size: 1.8rem;
+  margin-block: 39px;
 }
 #section3 .box-pratos h5 {
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 3.2rem;
+  margin-block: 32px;
+}
+/* terminou a parte dos pratos principais */
+
+/* ------------ */
+
+/* PARTE DOS COMENTARIOS */
+.section4 {
+  /* border: 4px solid black; */
+  max-width: 1228px;
+  margin-block: 100px;
+}
+.section4 h2 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 4.8rem;
+  margin-bottom: 4.8rem;
+}
+.section4 .comentariosWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 5px solid blue; */
+}
+.section4 .comentariosWrapper .comentariosConteudos {
+  width: 604px;
+  height: 390px;
+  background: #f3f3f3;
+  border-radius: 16px;
+  /* border: 2px solid green; */
+  padding: 41px 40px;
+}
+
+.section4 .comentariosWrapper .comentariosConteudos:nth-child(1) {
+  margin-right: 20px;
+}
+.section4 .comentariosWrapper .comentariosConteudos #dani {
+  width: 120px;
+  height: 120px;
+  border-radius: 16px;
+}
+.section4 .comentariosWrapper .comentariosConteudos #ricardo {
+  width: 120px;
+  height: 120px;
+  border-radius: 16px;
+}
+.section4 .comentariosWrapper .comentariosConteudos h3 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 3.2rem;
+  margin-top: 2.4rem;
+}
+.section4 .comentariosWrapper .comentariosConteudos p {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+.section4 .comentariosWrapper .comentariosConteudos .star {
+  margin-top: 5px;
+}
+/* TERMINOU A PARTE DA SECTION 3 */
+
+/* ----------------------------------------- */
+/* LOCALIZAÇÃO */
+
+.section5 {
+  max-width: 1228px;
+}
+.section5 .localizacao h2 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 4.8rem;
+  margin-bottom: 4.8rem;
+}
+.section5 .localizacao img {
+  width: 100%;
+}
+.section5 .localizacao .local-input {
+  max-width: 813px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 56px;
+  background: #fbfbfb;
+  border-radius: 10px 0px 0px 10px;
+}
+.input-border {
+  max-width: 630px;
+  display: flex;
+  border: 1px solid #292929;
+  border-radius: 10px 0px 0px 10px;
+  border-right: none;
+  padding-left: 24px;
+}
+.section5 .localizacao .local-input img {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #da2535;
+  width: 30px;
+  height: 30px;
+  align-self: center;
+}
+.section5 .localizacao .local-input input {
+  outline: none;
+  margin-left: 16px;
+  width: 630px;
+  height: 70px;
+  border: none;
+}
+.section5 .localizacao .local-input input::placeholder {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.section5 .localizacao .local-input #btn-buscar {
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  outline: none;
+  background: #da2535;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+  color: #fff;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 24px;
+}
+
+/* ----------------------------------------- */
+
+/* inicio do footer */
+#footer {
+  width: 100%;
+  max-width: 1228px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+}
+#footer .logo-footer{
+  justify-content: flex-start;
+}
+#footer a {
+  text-decoration: none;
+  color: var(--colormenu--);
+  font-family: 'Roboto';
+  font-weight: 400;
+  cursor: unset;
+}
+#footer a span {
+  cursor: pointer;
+}
+#footer .contato-footer,
+#footer .sobre-footer,
+#footer .servicos-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+#footer .contato-footer {
+  margin-left: 51px;
+}
+#footer .contato-footer h4,
+#footer .sobre-footer h4,
+#footer .servicos-footer h4 {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 32px;
+  color: var(--colormenu--);
+  margin-bottom: 24px;
+}
+#footer .contato-footer a,
+#footer .sobre-footer a,
+#footer .servicos-footer a {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--colormenu--);
+  margin-bottom: 8px;
 }

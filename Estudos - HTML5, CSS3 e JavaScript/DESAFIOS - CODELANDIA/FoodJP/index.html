@@ -85,6 +85,7 @@
               <img
                 src="Assets/img/ramen tradicional.png"
                 alt="Ramen tradicional"
+                id="ramen-tradicional"
               />
             </div>
             <h3>Ramen Tradicional</h3>
@@ -93,45 +94,75 @@
           </div>
         </div>
       </section>
-      <section class="quartaSection">
+
+      <section class="section4">
         <h2>Comentários</h2>
-        <div class="comentariosConteudos">
-          <img src="Assets/img/daniele.png" alt="Daniele Almeida" />
-          <p>Ótimo serviço! Encantada com a qualidade dos pratos.</p>
-          <img src="Assets/img/star.svg" alt="star" />
-          <img src="Assets/img/star.svg" alt="star" />
-          <img src="Assets/img/star.svg" alt="star" />
-          <img src="Assets/img/star.svg" alt="star" />
-          <img src="Assets/img/star.svg" alt="star" />
-        </div>
-        <div class="comentariosConteudos">
-          <img src="Assets/img/ricardo.png" alt="Ricardo França" />
-          <p>
-            Não é apenas a comida excelente, o serviço torna a experiência
-            especial.
-          </p>
-          <img src="Assets/img/star.svg" alt="star" />
-          <img src="Assets/img/star.svg" alt="star" />
-          <img src="Assets/img/star.svg" alt="star" />
-          <img src="Assets/img/star.svg" alt="star" />
-          <img src="Assets/img/star.svg" alt="star" />
+        <div class="comentariosWrapper">
+          <div class="comentariosConteudos">
+            <img src="Assets/img/daniele.png" alt="Daniele Almeida" id="dani" />
+            <h3>Daniele Almeida</h3>
+            <p>Ótimo serviço! Encantada com a qualidade dos pratos.</p>
+            <img src="Assets/img/star.svg" alt="star" class="star" />
+            <img src="Assets/img/star.svg" alt="star" class="star" />
+            <img src="Assets/img/star.svg" alt="star" class="star" />
+            <img src="Assets/img/star.svg" alt="star" class="star" />
+            <img src="Assets/img/star.svg" alt="star" class="star" />
+          </div>
+          <div class="comentariosConteudos">
+            <img
+              src="Assets/img/ricardo.png"
+              alt="Ricardo França"
+              id="ricardo"
+            />
+            <h3>Ricardo França</h3>
+            <p>
+              Não é apenas a comida excelente, o serviço torna a experiência
+              especial.
+            </p>
+            <img src="Assets/img/star.svg" alt="star" class="star" />
+            <img src="Assets/img/star.svg" alt="star" class="star" />
+            <img src="Assets/img/star.svg" alt="star" class="star" />
+            <img src="Assets/img/star.svg" alt="star" class="star" />
+            <img src="Assets/img/star.svg" alt="star" class="star" />
+          </div>
         </div>
       </section>
-      <section class="quintaSection">
+
+      <section class="section5">
         <div class="localizacao">
           <h2>Localização</h2>
           <img src="Assets/img/mapa rio.png" alt="Mapa" />
-          <div class="localizacaoSearch">
-            <form>
-              <i class="fa-solid fa-location-dot"></i>
-              <input type="text" />
-              <button type="submit">Buscar</button>
-            </form>
+          <div class="local-input">
+            <div class="input-border">
+              <img src="Assets/img/fi_map-pin.png" alt="local" />
+              <input type="text" placeholder="Localização para entrega" />
+            </div>
+            <button type="submit" id="btn-buscar">Buscar</button>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer id="footer">
+      <div class="logo-footer">
+        <h3 id="logo">Food<span style="--color: red">JP</span></h3>
+      </div>
+      <div class="contato-footer">
+        <h4>Contato</h4>
+        <a href="+55219999-9999"><span> +55 21 9999-9999</span></a>
+        <a href="mailto: email@gmail.com"><span>email@gmail.com</span> </a>
+      </div>
+      <div class="sobre-footer">
+        <h4>Sobre nós</h4>
+        <a href="#"><span>Menu</span></a>
+        <a href="#"><span>Valores</span></a>
+        <a href="#"><span>Pagina principal</span></a>
+      </div>
+      <div class="servicos-footer">
+        <h4>Serviços</h4>
+        <a href="#"><span>Entrega</span></a>
+        <a href="#"><span>Retirada</span></a>
+      </div>
+    </footer>
     <script src="Assets/js/main.js"></script>
   </body>
 </html>
