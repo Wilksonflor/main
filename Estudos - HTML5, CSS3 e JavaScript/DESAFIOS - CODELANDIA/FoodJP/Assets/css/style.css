@@ -38,7 +38,10 @@ header {
   justify-content: space-between;
   gap: 9.1rem;
 }
-.menu nav a {
+#nav {
+  display: flex;
+}
+.menu #nav a {
   width: 100%;
   font-family: 'Inter';
   font-weight: 500;
@@ -60,6 +63,18 @@ header {
   border: 2px solid #292929;
   border-radius: 10px;
 }
+#entrar:hover {
+  border: 2px solid #fff;
+  background-color: black;
+  color: #fff;
+  transition: 0.5s;
+}
+
+/* menu responsivo */
+#btn-mobile {
+  display: none;
+}
+
 /* Terminou o menu */
 
 /* --------------- */
@@ -115,6 +130,12 @@ main {
   font-family: 'Inter';
   font-weight: 600;
   font-size: 24px;
+}
+.btn-cardapio:hover {
+  border: 2px solid red;
+  color: var(--colorred--);
+  background-color: #fff;
+  transition: 0.5s;
 }
 /* --------------- */
 
@@ -356,7 +377,7 @@ main {
   margin-top: 100px;
   display: flex;
 }
-#footer .logo-footer{
+#footer .logo-footer {
   justify-content: flex-start;
 }
 #footer a {
@@ -398,4 +419,113 @@ main {
   font-size: 1.8rem;
   color: var(--colormenu--);
   margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 1981px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    background-color: green;
+  }
+}
+/* 
+responsividade para tela até 720px */
+@media only screen and (max-width: 720px) {
+  body {
+    background-color: yellow;
+  }
+  #section1 {
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  #section1 .conteudo:nth-child(2).displayMobile {
+    display: none;
+  }
+  main{
+    /* border: 4px solid green; */
+    padding:0 6rem ;
+  }
+  #section1 .conteudo h1{
+    font-size: 3.2rem;
+  }
+  #section1 .conteudo p{
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+  }
+/* ----------------FIM DA SECTION1-----------------   */
+ 
+  #section2{
+    /* background-color: aqua; */
+    flex-direction: column;
+   
+  }
+  #section2 .conteudoSection2{
+    height: initial;
+    text-align: center;
+  }
+  #section2 .conteudoSection2:nth-child(2){
+    justify-content: flex-start;
+    padding: 0 40px;
+  }
+
+  #section2 .conteudoSection2:nth-child(2) h2{
+    margin-top: 56px;
+    font-size: clamp(2.4rem, 5vw, 4.6rem);
+    width: 100%;
+    min-width: 181px;
+
+  }
+  #section2 .conteudoSection2:nth-child(2) p{
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+  }
+  #section2 .conteudoSection2:nth-child(2) a{
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+  }
+
+/* ----------------FIM DA SECTION2-----------------   */
+
+  #section3{
+    background-color: green;
+    
+  }
+  #section3 .box-wrapper{
+    flex-direction: column;
+    gap: 110px;
+  }
+  #section3 .box-wrapper .box-pratos{
+    min-width: 260px;
+    max-width: 500px;
+    padding: 0 50px;
+    text-align: center;
+  }
+  #section3 .box-wrapper .box-pratos h3{
+    font: clamp(2.4rem, 3vw, 3.2rem);
+  }
+
+/* ----------------FIM DA SECTION 03-----------------   */
+
+
+
+
+
+  .section4{
+    background-color: brown;
+  }
+  .section5{
+    background-color: #da2535;
+  }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 320px) {
+  body {
+    background-color: red;
+  }
 }
