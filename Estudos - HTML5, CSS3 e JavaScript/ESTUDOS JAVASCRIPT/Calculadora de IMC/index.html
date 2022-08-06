@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Calculadora IMC</title>
+  </head>
+  <body>
+    <main>
+      <div class="windowIMC">
+        <div class="medidasIMC">
+          <h1>Tabela com o IMC ideal</h1>
+          <img
+            src="assets/img/Tabela-de-IMC-dos-Graus-de-obesidade.png"
+            alt="Tabela sobre o peso ideal"
+          />
+        </div>
+
+        <div id="containerCard">
+          <h2>Calculadora - IMC</h2>
+          <div class="conteudoCard">
+            <form>
+              <label>Nome</label>
+              <input type="text" id="nome" />
+
+              <label>Altura</label>
+              <input type="text" id="altura" />
+
+              <label>Peso</label>
+              <input type="text" id="peso" />
+
+              <button type="submit" id="calcular">Calcular</button>
+              <!-- <input type="reset" value="Limpar" id="limpar" /> -->
+            </form>
+          </div>
+          <div id="resultado">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
