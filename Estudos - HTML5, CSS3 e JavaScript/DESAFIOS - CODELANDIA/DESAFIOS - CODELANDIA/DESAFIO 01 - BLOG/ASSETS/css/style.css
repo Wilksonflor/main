@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Lexend+Deca&family=Montserrat:wght@600;700&family=Poppins:wght@500&family=Roboto&display=swap');
+
+/*
+font-family: 'Lexend Deca';
+font-family: 'Inter', sans-serif;
+
+*/
+:root {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  background: linear-gradient(88.27deg, #574ae8 0%, #3ea1db 100%);
+  width: 100vw;
+  height: 18.5rem;
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.logos-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 3rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.logos-top h3 {
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: #fff;
+
+}
+.buscar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90rem;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+.buscar > i {
+  font-size: 3rem;
+  color: #fff;
+  opacity: 0.8;
+  margin: 10px;
+}
+.buscar input {
+  flex: 1;
+  width: 75rem;
+  height: 6.5rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  outline: none;
+  color: #fff;
+}
+.buscar input::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+/*Artigos - Inicio*/
+.conteudos{
+  display: flex;
+
+  flex-direction: column;
+}
+.artigos {
+  width: 100%;
+  min-width: 300px;
+  max-width: 900px;
+  height: 50%;
+  flex-grow: 1;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.5);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.topo-artigos {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+.topo-artigos {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+.topo-artigos button {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.conteudo-artigos p {
+  font-family: 'Lexend Deca';
+  font-size: 1.6rem;
+  color: #717171;
+  padding-top: 8px;
+  text-align: justify;
+}
+.conteudo-artigos h2 {
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  font-size: 2.6rem;
+}
+
+/*Parte de responsividade*/
+@media screen and (max-widht: 480px){
+  header{
+    width: 50%;
+  }
+}
