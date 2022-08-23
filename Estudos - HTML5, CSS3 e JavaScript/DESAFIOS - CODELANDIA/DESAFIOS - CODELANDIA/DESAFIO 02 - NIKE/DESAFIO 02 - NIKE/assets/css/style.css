@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Lexend+Deca&family=Montserrat:wght@600;700&family=Poppins:wght@500&family=Roboto&display=swap');
+:root {
+  font-size: 62.5%;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* DESKTOP */
+
+body {
+  width: 100%;
+  /* max-width: 1440px; */
+  margin: 0 auto;
+}
+
+.cupom,
+footer {
+  width: 100%;
+  background-color: #181818;
+  height: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0 14px 0;
+}
+
+.jordanShoe {
+  text-align: center;
+  margin-block: 6px;
+}
+.jordanShoe h2 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  width: 100%;
+  font-size: 2.4rem;
+}
+.sloganJordan {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.sloganJordan #shoesDesktop {
+  filter: brightness(50%);
+  width: 100%;
+  height: auto;
+}
+.sloganJordan #jordanMobile {
+  display: none;
+}
+.sloganJordan .sloganText {
+  position: absolute;
+  top: 10%;
+  z-index: 1;
+  margin-left: 100px;
+  width: 40%;
+  height: auto;
+}
+.sloganJordan .sloganText h1 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: clamp(2.8rem, 3vw, 3.2rem);
+  color: #f9f9f9;
+  margin-bottom: 1.9rem;
+}
+.sloganJordan .sloganText p {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: clamp(1.6rem, 2vw, 1.8rem);
+  color: #f9f9f9;
+  line-height: 196.19%;
+}
+
+.text {
+  text-align: center;
+  margin-top: 5.8rem;
+}
+
+.text h2 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 3.2rem;
+}
+
+.text p {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-top: 15px;
+}
+
+.shoesWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.shoesContainer {
+  background: #ebe9ea;
+  margin-block: 20px;
+  width: 300px;
+  height: auto;
+}
+.shoesContainer img {
+  cursor: pointer;
+}
+.shoesContainer img::after{
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.6s;
+  box-shadow: 0 5px 15px 0;
+  z-index: 1;
+}
+.shoesContainer img:hover{
+  transform: scale(1.25,1.25);
+}
+.shoesContainer img:hover::before{
+
+}
+/* RESPONSIVIDADE */
+@media only screen and (max-width: 320px) {
+  .cupom {
+    width: 100%;
+    height: auto;
+  }
+  .jordanShoe {
+    width: 100%;
+  }
+  .sloganJordan {
+    width: 100%;
+  }
+  .sloganJordan #shoesDesktop {
+    border: 2px solid red;
+    width: 100%;
+    height: 33vh;
+  }
+  .sloganJordan #jordanMobile {
+    display: block;
+    filter: brightness(50%);
+  }
+
+  .sloganJordan .sloganText {
+    width: 100%;
+    margin-left: 5px;
+  }
+
+  .shoesContainer {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sloganJordan #shoesDesktop {
+    display: none;
+    border: 4px solid green;
+    width: 100%;
+    height: 50vh;
+    
+  }
+  .sloganJordan #jordanMobile {
+    display: block;
+    width: 100%;
+    filter: brightness(50%);
+  }
+  .sloganJordan .sloganText {
+    top: 30%;
+    width: 90%;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sloganJordan #shoesDesktop {
+    width: 100%;
+    height: 50vh;
+  }
+  .sloganJordan .sloganText {
+    top: 30%;
+    width: 90%;
+    margin-left: 20px;
+  }
+}
