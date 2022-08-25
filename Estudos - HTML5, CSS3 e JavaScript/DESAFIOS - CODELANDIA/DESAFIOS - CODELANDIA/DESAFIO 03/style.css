@@ -21,7 +21,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 header{
     height: 560px;
     width: 100%;
@@ -76,13 +79,66 @@ header .textHeader p{
     font-family: var(--fontParagraph);
     font-size: 2.0rem;
 }
+#btnHeader:hover{
+    background-color: #fff;
+    border: 2px solid var(--btnColor);
+    color: var(--btnColor);
+}
 
-
-
-
-
-
-
+/* cards */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 90px;
+    margin-top: 150px;
+}
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 423px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    /* border: 4px solid green; */
+}
+.cardContainer .cardColor{
+    /* border: 4px solid blue; */
+ width: 100%;
+ height: 222px;
+}
+.cardContainer  #card1{
+    background-color: var(--firstcard);
+}
+.cardContainer #card2{
+    background-color: var(--secondcard);
+}
+.cardContainer #card3{
+    background-color: var(--thridcard);
+}
+.cardContainer #card4{
+    background-color: var(--fourthcard);
+}
+.cardContainer #card5{
+    background-color: var(--fivecard);
+}
+.cardContainer #card6{
+    background-color: var(--sixtcard);
+}
+.cardContainer .cardConteudos{
+    margin: 24px 28px 0 30px;
+}
+.cardContainer .cardConteudos h4{
+    font-family: var(--fontTitles);
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.cardContainer .cardConteudos p{
+    font-family: var(--fontParagraph);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 26px;
+}
 
 footer{
     background-color: var(--bgheader);
