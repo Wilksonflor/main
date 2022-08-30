@@ -1,158 +1,348 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
 
-:root{
-    font-size: 62.5%;
-    --bgheader: #D7D5FF;
-    --btnColor: #6C63FF;
-    --firstcard:  #FF6363;
-    --secondcard:  #63ECFF;
-    --thridcard:  #F363FF;
-    --fourthcard: #63FF73;
-    --fivecard:  #FFDD63;
-    --sixtcard:  #6663FF;
+:root {
+  font-size: 62.5%;
+  --bgheader: #d7d5ff;
+  --btnColor: #6c63ff;
+  --firstcard: #ff6363;
+  --secondcard: #63ecff;
+  --thridcard: #f363ff;
+  --fourthcard: #63ff73;
+  --fivecard: #ffdd63;
+  --sixtcard: #6663ff;
 
-    --fontParagraph: 'Lato', sans-serif;
-    --fontTitles:'Merriweather', serif;
-    
+  --fontParagraph: 'Lato', sans-serif;
+  --fontTitles: 'Merriweather', serif;
+  --fontSizeTitle1: clamp(3.2rem, 3vw, 3.6rem)
+  --fontSizeTitle2: 2.4rem;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    max-width: 1440px;
-    margin: 0 auto;
+body {
+  /* max-width: 1440px; */
+  margin: 0 auto;
 }
-header{
-    height: 560px;
-    width: 100%;
-    background-color: var(--bgheader);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-inline: 20px;
-    padding-block: 70px;
+header {
+  height: auto;
+  width: 100%;
+  background-color: var(--bgheader);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  padding-block: 50px;
 }
-header > img{
-    padding-right: 30px;
-    max-width: 500px;
-    height: auto;
-    max-height: 360px;
-}
-.textHeader{
+header > img {
 
-    width: 100%;
-    max-width: 490px;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 100px;
+  padding-right: 30px;
+  width: 50%;
+  max-width: 562px;
+  height: auto;
+  max-height: 360px;
 }
-.textHeader h1{
+.textHeader {
+  width: 100%;
+  max-width: 490px;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 100px;
+}
+.textHeader h1 {
+  text-align: left;
+  font-family: var(--fontTitles);
+  font-weight: 400;
+  font-size: clamp(3.2rem, 3vw, 3.6rem);
+}
+header .textHeader p {
+  font-family: var(--fontParagraph);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 2vw, 1.8rem);
+  margin-top: 17.5px;
+}
+#btnHeader {
+  background-color: var(--btnColor);
+  color: #fff;
+  border: none;
+  box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
 
-    text-align: left;
-    font-family: var(--fontTitles);
-    font-weight: 400;
-    font-size: clamp(3.2rem, 3vw, 3.6rem)
+  width: 155px;
+  height: 50px;
+  margin-top: 45px;
+  font-family: var(--fontParagraph);
+  font-size: 2rem;
 }
-header .textHeader p{
-    font-family: var(--fontParagraph);
-    font-weight: 400;
-    font-size: clamp(1.6rem, 2vw, 1.8rem);
-    margin-top: 17.5px;
-}
-#btnHeader{
-    background-color: var(--btnColor);
-    color: #fff;
-    border: none;
-    box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
-    border-radius: 5px;
-    cursor: pointer;
-
-    width: 155px;
-    height: 50px;
-    margin-top: 45px;
-    font-family: var(--fontParagraph);
-    font-size: 2.0rem;
-}
-#btnHeader:hover{
-    background-color: #fff;
-    border: 2px solid var(--btnColor);
-    color: var(--btnColor);
+#btnHeader:hover {
+  background-color: #fff;
+  border: 2px solid var(--btnColor);
+  color: var(--btnColor);
+  transition: 0.5s;
 }
 
 /* cards */
-main{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 90px;
+  margin-top: 150px;
+}
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  height: 423px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  /* border: 4px solid green; */
+}
+.cardContainer .cardColor {
+  /* border: 4px solid blue; */
+  width: 100%;
+  height: 222px;
+}
+.cardContainer #card1 {
+  background-color: var(--firstcard);
+}
+.cardContainer #card2 {
+  background-color: var(--secondcard);
+}
+.cardContainer #card3 {
+  background-color: var(--thridcard);
+}
+.cardContainer #card4 {
+  background-color: var(--fourthcard);
+}
+.cardContainer #card5 {
+  background-color: var(--fivecard);
+}
+.cardContainer #card6 {
+  background-color: var(--sixtcard);
+}
+.cardContainer .cardConteudos {
+  margin: 24px 28px 0 30px;
+}
+.cardContainer .cardConteudos h4 {
+  font-family: var(--fontTitles);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.cardContainer .cardConteudos p {
+  font-family: var(--fontParagraph);
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-top: 26px;
+}
+
+footer {
+  background-color: var(--bgheader);
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer > h2 {
+  font-family: var(--fontTitles);
+  font-weight: 700;
+  font-size: 2.8rem;
+  padding-top: 85px;
+}
+
+footer .formulario {
+  height: 500px;
+}
+footer .loginForm .formulario  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 60px;
+  height: 300px;
+}
+footer .loginForm .formulario input {
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  width: 470px;
+  height: 65px;
+  font-size: 1.8rem;
+}
+/* footer .formulario form input:focus{
+background-color: rgba(255, 255, 255, 0.808);
+} */
+footer .loginForm .formulario  input::placeholder {
+  padding-left: 10px;
+}
+footer .loginForm .formulario  #mensagem {
+  width: 470px;
+  height: 165px;
+  text-align: start;
+  padding-bottom: 80px;
+  outline: none;
+  border: none;
+  font-family: var(--fontParagraph);
+  font-size: 1.8rem;
+  resize: none;
+  
+}
+footer .loginForm .formulario  #mensagem::placeholder{
+  font-family: var(--fontParagraph);
+}
+footer .loginForm .formulario #enviarMsg {
+  background-color: var(--btnColor);
+  background: #6c63ff;
+  border: none;
+  box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+  border-radius: 5px;
+  color: #fff;
+  font-family: var(--fontParagraph);
+  font-size: 2rem;
+  cursor: pointer;
+  width: 471px;
+  height: 70px;
+}
+footer .loginForm .formulario  #enviarMsg:hover{
+  background-color: #fff;
+  border: 2px solid var(--btnColor);
+  color: var(--btnColor);
+  transition: 0.2s;
+}
+
+
+                                                /* RESPONSIVIDADE */
+
+@media only screen and (max-width: 320px){
+  header{
+    gap: 60px;
     flex-wrap: wrap;
-    gap: 90px;
-    margin-top: 150px;
+  }
+  main{
+    gap: 30px;
+  }
+  .textHeader{
+    padding: 0;
+    width: 100%;
+    display: flex;
+
+  }
+
+  header img{
+    width: 100%;
+  }
+  main .cardContainer{
+    margin-inline: 14px;
+
+  }
+  footer h2{
+    font-size: 2.4rem;
+  }
+  .formulario {
+    width: 374px;
+  }
+  footer .loginForm .formulario{
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer .loginForm .formulario input{
+    width: 90%;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  footer .loginForm .formulario input::placeholder{
+    font-size: 1.6rem;
+  }
+  footer .loginForm .formulario #nome{
+    margin-top: 20px;
+  }
+  footer .loginForm .formulario #mensagem{
+    width: 90%;
+  
+    padding-left: 10px;
+   }
+  footer .loginForm .formulario #enviarMsg{
+    width: 90%;
+    max-width: 270px;
+    font-size: 1.8rem;
+    height: 50px;
+  font-size: 2.2rem;
+ }
+
+ footer .loginForm .formulario #mensagem::placeholder{
+  font-family: var(--fontParagraph);
+  font-weight: bold;
+ }
+}
+
+/* RESPONSIVIDADE DE 480PX */
+
+@media only screen and (max-width: 480px){
+  header{
+    flex-wrap: wrap;
+   
+  }
+  .textHeader{
+
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+  header > img{
+  margin-top: 90px;
+   width: 90%;
+  }
+  #btnHeader{
+   
+    padding-left: 0;
+  }
+  main {
+    gap: 30px;
+  }
+  
+  footer .loginForm .formulario{
+    align-items: center;
+    width: 90%;
+    margin-inline: 15px;
+  }
+  footer .loginForm .formulario input,
+  footer .loginForm .formulario #mensagem{
+    width: 100%;
+  }
+  footer .loginForm .formulario #mensagem::placeholder{
+    font-family: var(--fontParagraph);
+    font-weight: bold;
+   }
+  footer .loginForm .formulario #enviarMsg{
+    width: 100%;
+
+  }
+ 
+}
+
+/* Responsividade 720px */
+
+@media only screen and (max-width: 768px){
+header{
+  padding-left: 0;
+}
+.textHeader{
+  padding-left: 15px;
+  align-items: flex-start;
+}
+main{
+  gap: 30px;
 }
 .cardContainer{
-    display: flex;
-    flex-direction: column;
-    width: 340px;
-    height: 423px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    /* border: 4px solid green; */
+  padding-inline: 20px;
 }
-.cardContainer .cardColor{
-    /* border: 4px solid blue; */
- width: 100%;
- height: 222px;
-}
-.cardContainer  #card1{
-    background-color: var(--firstcard);
-}
-.cardContainer #card2{
-    background-color: var(--secondcard);
-}
-.cardContainer #card3{
-    background-color: var(--thridcard);
-}
-.cardContainer #card4{
-    background-color: var(--fourthcard);
-}
-.cardContainer #card5{
-    background-color: var(--fivecard);
-}
-.cardContainer #card6{
-    background-color: var(--sixtcard);
-}
-.cardContainer .cardConteudos{
-    margin: 24px 28px 0 30px;
-}
-.cardContainer .cardConteudos h4{
-    font-family: var(--fontTitles);
-    font-size: 2.4rem;
-    font-weight: 700;
-}
-.cardContainer .cardConteudos p{
-    font-family: var(--fontParagraph);
-    font-size: 1.8rem;
-    font-weight: 400;
-    margin-top: 26px;
-}
-/* --------------------- FOOTER ---------------------*/
-footer{
- 
-    margin-top: 150px;
-    width: 100%;
-    height: 750px;
-    background-color: var(--bgheader);
-}
-footer .formulario{
-    display: flex;
-}
-footer .formulario form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
 }
