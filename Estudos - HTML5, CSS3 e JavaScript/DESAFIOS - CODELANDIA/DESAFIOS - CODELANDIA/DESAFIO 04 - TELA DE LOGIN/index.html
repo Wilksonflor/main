@@ -13,7 +13,7 @@
         <img src="assets/img/bgLeft.png" alt="imagem da tela de login" />
       </div>
 
-      <div class="containerRight">
+      <div class="containerRight" id="form">
         <div class="titleLogin">
           <p>Bem-vindo de volta</p>
           <h1>Faça login na sua conta</h1>
@@ -22,7 +22,6 @@
           <label for="email">E-mail</label>
           <input
             type="text"
-            title="Preencha o campo"
             name="email"
             id="email"
             placeholder="email@gmail.com"
@@ -47,7 +46,7 @@
         </div>
 
         <div class="btnLogin">
-          <button type="submit" id="entrar" onclick="entrar()">Entrar</button>
+          <button type="submit" id="entrar">Entrar</button>
           <button id="loginGoogle">
             <img src="assets/img/google icon.png" alt="icone do google" /> Ou
             faça login com o Google
@@ -55,7 +54,10 @@
         </div>
 
         <div class="cardFooter">
-          <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+          <p>
+            Não tem uma conta?
+            <a href="/assets/pages/andamento.html">Cadastre-se</a>
+          </p>
         </div>
       </div>
     </main>

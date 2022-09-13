@@ -39,10 +39,11 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  
 }
 
 .containerRight .titleLogin {
-  
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +66,9 @@ main {
 .inputsLogin {
   display: flex;
   flex-direction: column;
+  
 }
+
 .inputsLogin label {
   font-family: var(--fontGeneral--);
   font-size: 1.6rem;
@@ -80,6 +83,8 @@ main {
   font-family: var(--fontGeneral--);
   font-size: 1.6rem;
   color: #1a202c;
+  border: 1px solid black;
+  border-radius: 8px;
 }
 .inputsLogin input::placeholder {
   font-family: var(--fontGeneral--);
@@ -87,6 +92,9 @@ main {
   font-weight: 400;
   color: #1a202c;
   padding-left: 10px;
+}
+.inputsLogin.error i{
+border: 3px solid red;
 }
 
 .remeberAndForgot {
@@ -175,7 +183,7 @@ main {
 
 /* responsividade */
 @media only screen and (max-width: 320px) {
-  main{
+  main {
     overflow-x: none;
   }
   .containerLeft {
@@ -195,7 +203,7 @@ main {
   .inputsLogin input {
     width: 98%;
   }
-  .inputsLogin label{
+  .inputsLogin label {
     width: 95%;
   }
   .remeberAndForgot {
@@ -213,58 +221,54 @@ main {
   }
 }
 
-
-
-@media only screen and (max-width:350px){
-  .containerRight{
+@media only screen and (max-width: 350px) {
+  .containerRight {
     width: 100%;
   }
-  .inputsLogin{
+  .inputsLogin {
     width: 98%;
     margin-inline: 12px;
   }
-  .inputsLogin input{
+  .inputsLogin input {
     width: 100%;
   }
-  .remeberAndForgot{
+  .remeberAndForgot {
     width: 98%;
   }
-  .btnLogin{
+  .btnLogin {
     width: 100%;
   }
-  .btnLogin #entrar{
+  .btnLogin #entrar {
     width: 98%;
   }
-  .btnLogin #loginGoogle{
+  .btnLogin #loginGoogle {
     width: 98%;
   }
 }
 
-
-
-@media only screen and (max-width:480px){
-  .containerLeft{
+@media only screen and (max-width: 480px) {
+  .containerLeft {
     display: none;
   }
-  .containerRight{
+  .containerRight {
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 720px){
-  .containerLeft{
+@media only screen and (max-width: 720px) {
+  .containerLeft {
     display: none;
   }
 }
 
-@media only screen and (max-width: 912px){
-main{
-  gap: 20px;
-}
-.containerLeft{
-  width: 90%;
-}
-.containerRight {
-  width: 100%;
-}
+@media only screen and (max-width: 912px) {
+  main {
+    gap: 20px;
+  }
+  .containerLeft {
+    width: 90%;
+  }
+  .containerRight {
+    width: 100%;
+  }
 }
