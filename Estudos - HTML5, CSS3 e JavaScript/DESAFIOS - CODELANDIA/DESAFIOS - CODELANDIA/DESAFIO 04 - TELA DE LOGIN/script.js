@@ -4,6 +4,6 @@
 function entrar(){
     let emailValid = document.getElementById('email').value
     if(emailValid == ''){
-        alert('Digite o campo')
+        alert('Digite o email')
     }
 }
