@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+:root {
+  font-size: 62.5%;
+  --fontTitle--: 'Merriweather', serif;
+  --fontGeneral--: 'Lato', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+
+.containerLeft {
+  width: 100%;
+  height: 100vh;
+  background-color: #f7fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerLeft img {
+  min-width: 50%;
+  max-width: 100%;
+}
+
+.containerRight {
+  width: 50%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.containerRight .titleLogin {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerRight .titleLogin p {
+  font-family: var(--fontTitle--);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #1a202c;
+}
+.containerRight .titleLogin h1 {
+  font-family: var(--fontTitle--);
+  font-size: clamp(2.4rem, 2vw, 2.6rem);
+  font-weight: 700;
+  margin-top: 0.7rem;
+  margin-bottom: 3.9rem;
+  color: #1a202c;
+}
+
+.inputsLogin {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputsLogin label {
+  font-family: var(--fontGeneral--);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-block: 11px;
+  color: #1a202c;
+}
+.inputsLogin input {
+  width: 350px;
+  height: 50px;
+  outline: none;
+  font-family: var(--fontGeneral--);
+  font-size: 1.6rem;
+  color: #1a202c;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+.inputsLogin input::placeholder {
+  font-family: var(--fontGeneral--);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #1a202c;
+  padding-left: 10px;
+}
+.inputsLogin.error i {
+  border: 3px solid red;
+}
+
+.remeberAndForgot {
+  width: 350px;
+  display: flex;
+  margin-block: 28px;
+  align-items: center;
+  justify-content: space-between;
+}
+.remeberAndForgot .btnRemember {
+  font-family: var(--fontGeneral--);
+  font-weight: 400;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: 50%;
+  color: #1a202c;
+}
+.remeberAndForgot a {
+  text-decoration: none;
+  font-family: var(--fontGeneral--);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #2b6cb0;
+}
+
+.btnLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.btnLogin #entrar {
+  cursor: pointer;
+  font-family: var(--fontGeneral--);
+  font-style: normal;
+  font-size: 1.6rem;
+  width: 350px;
+  height: 50px;
+  background: #04c45c;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+}
+.btnLogin #entrar:hover {
+  background: #04c45ee8;
+}
+
+.btnLogin #loginGoogle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-family: var(--fontGeneral--);
+  font-style: normal;
+  font-size: 1.6rem;
+  width: 350px;
+  height: 50px;
+  background: #1a202c;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+}
+.btnLogin #loginGoogle:hover {
+  background: #1a202ce5;
+}
+
+.cardFooter {
+  margin-block: 50px;
+  width: 100%;
+}
+.cardFooter p {
+  font-family: var(--fontGeneral--);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #1a202c;
+}
+.cardFooter a {
+  font-family: var(--fontGeneral--);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #2b6cb0;
+}
+
+/* responsividade */
+@media only screen and (max-width: 320px) {
+  main {
+    overflow-x: none;
+  }
+  .containerLeft {
+    display: none;
+  }
+  .containerRight {
+    width: 100%;
+  }
+  .containerRight .titleLogin h1 {
+    font-size: 2.4rem;
+  }
+
+  .inputsLogin {
+    width: 98%;
+    margin-inline: 3px auto;
+  }
+  .inputsLogin input {
+    width: 98%;
+  }
+  .inputsLogin label {
+    width: 95%;
+  }
+  .remeberAndForgot {
+    width: 90%;
+    justify-content: flex-start;
+  }
+  .btnLogin {
+    width: 95%;
+  }
+  .btnLogin #entrar {
+    width: 100%;
+  }
+  .btnLogin #loginGoogle {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .containerRight {
+    width: 100%;
+  }
+  .inputsLogin {
+    width: 98%;
+    margin-inline: 12px;
+  }
+  .inputsLogin input {
+    width: 100%;
+  }
+  .remeberAndForgot {
+    width: 98%;
+  }
+  .btnLogin {
+    width: 100%;
+  }
+  .btnLogin #entrar {
+    width: 98%;
+  }
+  .btnLogin #loginGoogle {
+    width: 98%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .containerLeft {
+    display: none;
+  }
+  .containerRight {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .containerLeft {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  main {
+    gap: 20px;
+  }
+  .containerLeft {
+    width: 90%;
+  }
+  .containerRight {
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 1900px){
+  
+  .cardFooter{
+    text-align: center;
+    width: 100%;
+    
+  }
+}
